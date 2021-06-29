@@ -7,7 +7,7 @@ const Index = () =>{
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		if(name && email){
-			let inputItems = {name,  id:new Date().getTime().toString()}
+			let inputItems = {name,email  id:new Date().getTime().toString()}
 			dispatch({type:'ADD_ITEM', payload:inputItems})
 		}
 		else{
